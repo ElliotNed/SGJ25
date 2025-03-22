@@ -148,7 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5c2895b5c31a42cb95d36d019aeff5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Address: /music/start
+  StartAddress: /music/start
+  EndAddress: /music/stop
   Transmitter: {fileID: 302865981}
 --- !u!4 &154554012
 Transform:

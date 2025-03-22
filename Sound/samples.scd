@@ -33,7 +33,7 @@ s.waitForBoot({
 	OSCdef(\set, { |msg|
 		msg.postln;
 		Ndef(\PlayBuf).set(\lpf, 200)
-	}, '/music/stop');
+	}, '/music/set');
 });
 
 )

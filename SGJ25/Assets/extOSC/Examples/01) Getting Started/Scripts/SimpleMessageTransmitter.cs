@@ -6,25 +6,35 @@ namespace extOSC.Examples
 {
 	public class SimpleMessageTransmitter : MonoBehaviour
 	{
-		#region Public Vars
+        #region Public Vars
 
-		public string Address = "/example/1";
+        public string StartAddress = "/music/start";
+        public string EndAddress = "/music/stop";
 
-		[Header("OSC Settings")]
+        [Header("OSC Settings")]
 		public OSCTransmitter Transmitter;
 
-		#endregion
+        #endregion
 
-		#region Unity Methods
+        #region Unity Methods
 
-		protected virtual void Start()
-		{
-			var message = new OSCMessage(Address);
-			message.AddValue(OSCValue.String("Hello, world!"));
+        protected virtual void Start()
+        {
+            var message = new OSCMessage(StartAddress);
+            message.AddValue(OSCValue.String("Hello, world!"));
 
-			Transmitter.Send(message);
-		}
+            Transmitter.Connect();
+            Transmitter.Send(message);
+        }
 
-		#endregion
-	}
+        private void OnApplicationQuit()
+        {
+            var message = new OSCMessage(EndAddress);
+            message.AddValue(OSCValue.String("Hello, world!"));
+
+            Transmitter.Send(message);
+        }
+
+        #endregion
+    }
 }
