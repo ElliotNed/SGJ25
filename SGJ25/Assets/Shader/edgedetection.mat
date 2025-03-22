@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5821948942370249311
+--- !u!114 &-3374526031910100005
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_SG_RadarEffect
-  m_Shader: {fileID: -6465566751694194690, guid: 8f871967e7aa28744a3972c0f8714b35, type: 3}
+  m_Name: edgedetection
+  m_Shader: {fileID: -6465566751694194690, guid: 5f22b98d6f086bb478d4a4f91a63c879, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -31,8 +31,7 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses:
-  - MOTIONVECTORS
+  disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -51,14 +50,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Edge_Effect: 0.17
-    - _Float: 5745.62
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _edge_thickness: 0.4
-    - _noise_scale: 1000
-    - _step: 29
-    m_Colors:
-    - _Color: {r: 0.5999999, g: 0.56470585, b: 0, a: 0}
+    m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
