@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:SGJ25/Assets/Scenes/Corentin.unity.meta
 guid: 66dc2ae175b1a81469766f46d64708b4
+========
+guid: 6f7cc4d7b1608a54da7347586d37b7ec
+>>>>>>>> origin/Elliot:SGJ25/Assets/Scenes/Main.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
