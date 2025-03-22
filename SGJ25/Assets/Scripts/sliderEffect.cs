@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 public class sliderEffect : MonoBehaviour
 {
     [SerializeField] float maxPowerCapacity = 50;
+  //  SimpleMessageTransmitter
     float powerCapacity;
 
     public UnityEngine.UI.Slider sliderThermal;
@@ -28,6 +29,7 @@ public class sliderEffect : MonoBehaviour
 
     private void UpdateSlidersMaxValue(UnityEngine.UI.Slider slider)
     {
+        //todo send msg
         float sum = sliderThermal.value + sliderRadar.value + sliderOptic.value;
         if(sum > maxPowerCapacity)
         {
