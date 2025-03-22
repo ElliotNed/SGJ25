@@ -8,7 +8,6 @@ public class TargetUI : MonoBehaviour
     private void Update()
     {
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Debug.Log(mousePos);
     }
     public void SpawnOnCursor()
     {
