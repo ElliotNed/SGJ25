@@ -18,6 +18,8 @@ namespace extOSC.Examples
 
         #region Unity Methods
 
+        // TODO add public sendMsg fn
+
         protected virtual void Start()
         {
             var message = new OSCMessage(StartAddress);
@@ -29,6 +31,7 @@ namespace extOSC.Examples
 
         private void OnApplicationQuit()
         {
+            // sendMsg(EndAddress)
             var message = new OSCMessage(EndAddress);
             message.AddValue(OSCValue.String("Hello, world!"));
 
