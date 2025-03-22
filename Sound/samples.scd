@@ -1,9 +1,5 @@
 (
-//
 // Spec.add(\index, [0, 40]);
-// Spec.add(\harm1, [0, 20, \lin, 1]);
-// Spec.add(\harm2, [0, 20, \lin, 1]);
-// Spec.add(\fundFreq, \freq);
 
 thisProcess.openUDPPort(57120);
 
@@ -38,10 +34,10 @@ s.waitForBoot({
 
 )
 
-
-	OSCdef(\s, {|msg|
-		msg.postln;
-	}, '/pick');
-
-OSCdef.trace(true)
-OSCdef.trace(false)
+//
+// OSCdef(\s, {|msg|
+// 	msg.postln;
+// }, '/pick');
+//
+// OSCdef.trace(true)
+// OSCdef.trace(false)
