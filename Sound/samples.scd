@@ -1,9 +1,7 @@
 (
-//
 // Spec.add(\index, [0, 40]);
-// Spec.add(\harm1, [0, 20, \lin, 1]);
-// Spec.add(\harm2, [0, 20, \lin, 1]);
-// Spec.add(\fundFreq, \freq);
+
+thisProcess.openUDPPort(57120);
 
 s.waitForBoot({
 	Ndef.clear();
@@ -16,19 +14,30 @@ s.waitForBoot({
 		sig = LPF.ar(sig, \lpf.kr(200));
 
 		Out.ar(out, sig);
-	}).add;
+	0}).add;
 
-	thisProcess.openUDPPort(57120);
-	OSCdef(\start, {
+	OSCdef(\start, {|msg|
+		msg.postln;
 		Ndef(\PlayBuf, \Music).play;
 	}, '/music/start');
-	OSCdef(\stop, {
+
+	OSCdef(\stop, { |msg|
+		msg.postln;
 		Ndef(\PlayBuf).stop;
 	}, '/music/stop');
+
 	OSCdef(\set, { |msg|
 		msg.postln;
 		Ndef(\PlayBuf).set(\lpf, 200)
-	}, '/music/stop');
+	}, '/music/set');
 });
 
 )
+
+//
+// OSCdef(\s, {|msg|
+// 	msg.postln;
+// }, '/pick');
+//
+// OSCdef.trace(true)
+// OSCdef.trace(false)
