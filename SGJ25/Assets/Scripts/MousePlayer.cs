@@ -6,6 +6,8 @@ public class MousePlayer : MonoBehaviour
 {
     [SerializeField] float guessRadius = .2f;
     private bool victory = false;
+
+    [SerializeField] GameObject retryText;
     public void PlaceTarget(InputAction.CallbackContext context)
     {
         GameObject[] targets = GameObject.FindGameObjectsWithTag("Target");
@@ -45,23 +47,16 @@ public class MousePlayer : MonoBehaviour
                 if (nearbyObject.TryGetComponent(out RightTarget success))
                 {
                     foundTarget = true;
-                    if(!victory)
-                        ScoreManager.Victory();
-
-                    victory = true;
-                    Debug.Log("victory " + ScoreManager.score);
+                    Debug.Log("success");
+                    LevelManager.NextLevel();
                 }
                 if (!foundTarget)
                 {
                     Destroy(target);
-                    //afficher erreur
-                    ScoreManager.Loose();
-                    Debug.Log("loose " +ScoreManager.score);
+                    retryText.SetActive(true);
+                    Debug.Log("retry");
                 }
             }
         }
-
-        if(victory)
-            LevelManager.NextLevel();
     }
 }
