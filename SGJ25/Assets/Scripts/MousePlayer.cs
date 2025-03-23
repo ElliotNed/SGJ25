@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class MousePlayer : MonoBehaviour
 {
     [SerializeField] float guessRadius = .2f;
+    private bool victory = false;
     public void PlaceTarget(InputAction.CallbackContext context)
     {
         GameObject[] targets = GameObject.FindGameObjectsWithTag("Target");
@@ -36,16 +37,30 @@ public class MousePlayer : MonoBehaviour
         GameObject[] targets = GameObject.FindGameObjectsWithTag("Target");
         foreach (var target in targets)
         {
+            bool foundTarget = false;
             foreach(var nearbyObject in Physics.OverlapSphere(target.transform.position, guessRadius))
             {
+                //victory
                 if (nearbyObject.TryGetComponent(out RightTarget success))
-                    LevelManager.NextLevel();
-                /*
-                else
-                    afficher Panel UI défaite avec bouton pour reload Scene
-                */
-                    
+                {
+                    foundTarget = true;
+                    if(!victory)
+                        ScoreManager.Victory();
+
+                    victory = true;
+                    Debug.Log("victory " + ScoreManager.score);
+                }
+                if (!foundTarget)
+                {
+                    Destroy(target);
+                    //afficher erreur
+                    ScoreManager.Loose();
+                    Debug.Log("loose " +ScoreManager.score);
+                }
             }
         }
+
+        if(victory)
+            LevelManager.NextLevel();
     }
 }
