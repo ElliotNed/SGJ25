@@ -12,12 +12,9 @@ public class Target : MonoBehaviour
         if (isPlaced)
             return;
 
-        mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        if(Physics.Raycast(mousePos, Vector3.down, out RaycastHit raycastHit))
-        {
-            Debug.Log(raycastHit.point.y);
-            transform.position = new Vector3(mousePos.x, raycastHit.point.y, mousePos.z);
-        }
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = new Vector3(mousePos.x-4, 1, mousePos.z-0.3f);
+        Debug.Log(mousePos);
     }
 
     public void PlaceTarget()
