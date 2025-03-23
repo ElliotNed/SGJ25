@@ -63,7 +63,7 @@ Material:
     - _Power: 1
     - _Power_1: 1000
     - _R: 0
-    - _Radar: 1
+    - _Radar: 0
     - _blend: 0
     - _saturation: 0
     m_Colors: []
