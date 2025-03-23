@@ -5,7 +5,7 @@ public class Target : MonoBehaviour
 {
     public Vector3 mousePos;
 
-    private bool isPlaced = false;
+    public bool isPlaced = false;
 
     public bool isRightTarget = false; //have to be only one right target
 

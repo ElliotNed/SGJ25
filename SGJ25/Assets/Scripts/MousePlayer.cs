@@ -16,6 +16,21 @@ public class MousePlayer : MonoBehaviour
         }
     }
 
+    public void RotateTarget(InputAction.CallbackContext context)
+    {
+        GameObject[] targets = GameObject.FindGameObjectsWithTag("Target");
+        if(context.started && targets.Length > 0)
+        {
+            foreach(var target in targets)
+            {
+                if(!target.GetComponent<Target>().isPlaced)
+                {
+                    
+                }
+            }
+        }
+    }
+
     public void GuessTarget()
     {
         GameObject[] targets = GameObject.FindGameObjectsWithTag("Target");
