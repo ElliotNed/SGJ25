@@ -7,6 +7,8 @@ public class Target : MonoBehaviour
 
     private bool isPlaced = false;
 
+    public bool isRightTarget = false; //have to be only one right target
+
     private void Update()
     {
         if (isPlaced)
@@ -14,7 +16,6 @@ public class Target : MonoBehaviour
 
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector3(mousePos.x-4, 1, mousePos.z-0.3f);
-        Debug.Log(mousePos);
     }
 
     public void PlaceTarget()
