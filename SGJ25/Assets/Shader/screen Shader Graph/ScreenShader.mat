@@ -50,22 +50,29 @@ Material:
     m_Ints: []
     m_Floats:
     - _B: 0
-    - _Blur_level: 0
+    - _Blur_level: 0.01
     - _Boolean: 0
     - _Boolean_1: 0
     - _Boolean_2: 0
     - _Boolean_3: 1
-    - _Contrast: 1
-    - _Float: 0
+    - _Contrast: 1.1
+    - _Contrast_quality: 1
+    - _Float: 1
     - _G: 0
+    - _Interaction: 0
     - _NB: 0
     - _NB_Gradient_coef: 455
-    - _Power: 1.62
-    - _Power_1: 997
+    - _Power: 1
+    - _Power_1: 0
     - _R: 0
     - _Radar: 0
-    - _Thermic: 1
-    - _blend: 0.25
+    - _Slider_Optic: 0
+    - _Slider_Radar: 0
+    - _Slider_Thermic: 0
+    - _Thermic: 0
+    - _blend: 0
+    - _blend_thermic_radar: 2
+    - _radar_autre: 0
     - _saturation: 0
     m_Colors: []
   m_BuildTextureStacks: []
