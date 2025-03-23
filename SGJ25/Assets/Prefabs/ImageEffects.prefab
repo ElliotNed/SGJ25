@@ -49,9 +49,13 @@ MonoBehaviour:
   - {fileID: 8400000, guid: b61562d60d59d30458de3f8e4c143fb3, type: 2}
   - {fileID: 8400000, guid: 7aa2fa2dc61569946a451f8c2bf0ecad, type: 2}
   - {fileID: 8400000, guid: 348bf5ef69e11b444bf2daf4b24e1823, type: 2}
+  - {fileID: 8400000, guid: c2b996739bbe86a4dbb2e942cdf78527, type: 2}
+  - {fileID: 8400000, guid: 603190d34f6eec4469e118a7d08dbc5e, type: 2}
+  - {fileID: 8400000, guid: 895cb613ba9a90a409f6bef3dfe2922e, type: 2}
+  - {fileID: 8400000, guid: b2d335316d9563f4eae5ac15d61f40d8, type: 2}
   cam: {fileID: 0}
   mapScreenUI: {fileID: 0}
-  resIndex: 0
+  resIndex: 5
 --- !u!114 &7892673238653663721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b77f13c946efcf439b24ce9bcf05dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPowerCapacity: 50
+  maxPowerCapacity: 150
   sliderThermal: {fileID: 0}
   sliderRadar: {fileID: 0}
   sliderOptic: {fileID: 0}
