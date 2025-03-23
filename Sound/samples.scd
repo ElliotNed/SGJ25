@@ -31,8 +31,8 @@ s.waitForBoot({
 	}, '/music/stop');
 
 	OSCdef(\set, { |msg|
-		var spec = msg[0];
-		var value = spec.asSpec.map(msg[1].asFloat / 100);
+		var spec = msg[1].asSymbol;
+		var value = spec.asSpec.map(msg[2].asFloat / 100);
 
 		msg.postln;
 		Ndef(\Music).set(spec, value)
@@ -42,6 +42,7 @@ s.waitForBoot({
 //
 )
 
+"distortMul".asSymbol.asSpec
 Ndef(\Music).gui
 
 //
