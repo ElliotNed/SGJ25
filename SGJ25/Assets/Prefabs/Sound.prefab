@@ -46,5 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Transmitter: {fileID: 0}
   DevMode: 0
-  SoundDirectory: ../../Sound
+  SoundDirectory: ../Sound
   FileName: samples.scd
