@@ -60,8 +60,8 @@ Material:
     - _G: 0
     - _NB: 0
     - _NB_Gradient_coef: 455
-    - _Power: 1.83
-    - _Power_1: 500
+    - _Power: 1
+    - _Power_1: 1000
     - _R: 0
     - _Radar: 1
     - _blend: 0
