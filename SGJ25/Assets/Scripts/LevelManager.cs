@@ -1,16 +1,21 @@
+using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class LevelManager : MonoBehaviour
+public static class LevelManager
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public static int[] levels = new int[] { 1, 2, 3 }; //all levels index
 
-    // Update is called once per frame
-    void Update()
+    public static void NextLevel()
     {
-        
+        int currentLevel = SceneManager.GetActiveScene().buildIndex;
+        if (currentLevel < levels.Length-1)
+        {
+            SceneManager.LoadScene(currentLevel+1);
+        }
+        if (currentLevel == levels.Length-1)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }
