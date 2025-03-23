@@ -27,12 +27,13 @@ s.waitForBoot({
 	}, '/music/stop');
 
 	OSCdef(\set, { |msg|
+		"set".postln;
 		msg.postln;
-		Ndef(\PlayBuf).set(\lpf, 200)
+		Ndef(\PlayBuf).set(\lpf, msg)
 	}, '/music/set');
 
 
-Ndef(\PlayBuf, \Music).play;
+	Ndef(\PlayBuf, \Music).play;
 });
 //
 )
@@ -46,3 +47,4 @@ Ndef(\PlayBuf, \Music).play;
 // OSCdef.trace(false)
 
 // Server.killAll
+// Ndef(\PlayBuf).gui
