@@ -16,7 +16,7 @@ s.waitForBoot({
 		var sig = PlayBuf.ar(2, bufnum, BufRateScale.kr(bufnum), loop:1, doneAction: Done.freeSelf);
 		sig = LPF.ar(sig, \lpf.kr(200));
 		sig = sig + (sig * WhiteNoise.ar(\distortMul.kr(0.01), \distortAdd.kr(0.01)));
-		sig = sig * \gain.kr(1);
+		sig = sig * \gain.kr(1) * 0.0213;
 		Out.ar(out, sig);
 	});
 
@@ -34,7 +34,6 @@ s.waitForBoot({
 		var spec = msg[1].asSymbol;
 		var value = spec.asSpec.map(msg[2].asFloat / 100);
 
-		msg.postln;
 		Ndef(\Music).set(spec, value)
 	}, '/music/set');
 

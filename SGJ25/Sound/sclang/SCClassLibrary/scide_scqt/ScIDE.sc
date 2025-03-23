@@ -348,6 +348,10 @@ ScIDE {
 		this.send(\closeDocument, [quuid]);
 	}
 
+	*save {|quuid, docPath|
+		this.send(\saveDocument, [quuid, docPath]);
+	}
+
 	*setDocumentTitle {|quuid, newTitle|
 		this.send(\setDocumentTitle, [quuid, newTitle]);
 	}
@@ -589,6 +593,14 @@ Document {
 
 	close { ScIDE.close(quuid); }
 
+	save { |docPath|
+		docPath = docPath ? path;
+		if(docPath.isNil) { MethodError("Document saved requires specified path", this).throw; };
+		// NB Ideally the line below should be replaced by a primitive
+		if(docPath.dirname.pathMatch.size ==  0) { MethodError("Document save failed as directory does not exist.", this).throw };
+		ScIDE.save(quuid, docPath);
+	}
+
 	// asynchronous get
 	// range -1 means to the end of the Document
 	// 'getText' tried to replace this approach,
@@ -749,11 +761,17 @@ Document {
 	}
 
 	prAdd {
+		var savePath;
 		allDocuments = allDocuments.add(this);
 		if (autoRun) {
-			if (this.rangeText(0,7) == "/*RUN*/")
-			{
-				this.text.interpret;
+			if (this.rangeText(0,7) == "/*RUN*/") {
+				savePath = thisProcess.nowExecutingPath;
+				protect {
+					thisProcess.nowExecutingPath = path;
+					this.text.interpret;
+				} {
+					thisProcess.nowExecutingPath = savePath;
+				}
 			}
 		};
 		initAction.value(this);
