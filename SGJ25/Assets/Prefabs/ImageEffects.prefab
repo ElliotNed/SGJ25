@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &646986034684279367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3187970265615757743}
+  - component: {fileID: 4097179577450148544}
+  - component: {fileID: 7892673238653663721}
+  m_Layer: 0
+  m_Name: ImageEffects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3187970265615757743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646986034684279367}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.30680683, y: 1.3914642, z: 0.82630634}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4097179577450148544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646986034684279367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a02e829459127549a158aa57ab43a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolutionList:
+  - {fileID: 8400000, guid: b61562d60d59d30458de3f8e4c143fb3, type: 2}
+  - {fileID: 8400000, guid: 7aa2fa2dc61569946a451f8c2bf0ecad, type: 2}
+  - {fileID: 8400000, guid: 348bf5ef69e11b444bf2daf4b24e1823, type: 2}
+  - {fileID: 8400000, guid: c2b996739bbe86a4dbb2e942cdf78527, type: 2}
+  - {fileID: 8400000, guid: 603190d34f6eec4469e118a7d08dbc5e, type: 2}
+  - {fileID: 8400000, guid: 895cb613ba9a90a409f6bef3dfe2922e, type: 2}
+  - {fileID: 8400000, guid: b2d335316d9563f4eae5ac15d61f40d8, type: 2}
+  cam: {fileID: 0}
+  mapScreenUI: {fileID: 0}
+  resIndex: 5
+--- !u!114 &7892673238653663721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646986034684279367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b77f13c946efcf439b24ce9bcf05dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPowerCapacity: 150
+  sliderThermal: {fileID: 0}
+  sliderRadar: {fileID: 0}
+  sliderOptic: {fileID: 0}

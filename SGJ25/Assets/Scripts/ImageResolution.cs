@@ -11,7 +11,7 @@ public class ImageResolution : MonoBehaviour
     [SerializeField] Camera cam;
     [SerializeField] RawImage mapScreenUI;
 
-    [UnityEngine.Range(0,2)]
+    [UnityEngine.Range(0,6)]
     public int resIndex = 0;
 
     private void Update()
