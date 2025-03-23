@@ -1562,7 +1562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0bc7a0eba8194746acdb6d26f7b85ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Main
+  levelToLoad: Level 1
   infosWindow: {fileID: 2028272433}
   mainMenu: {fileID: 1028829840}
 --- !u!4 &1533781250
