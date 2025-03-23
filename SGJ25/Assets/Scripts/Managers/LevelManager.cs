@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public static class LevelManager
 {
-    public static int[] levels = new int[] { 1, 2, 3 }; //all levels index
+    public static int[] levels = new int[] { 1, 2, 3, 4 }; //all levels index
 
     public static void NextLevel()
     {
