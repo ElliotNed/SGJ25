@@ -7,6 +7,7 @@ public class MenuPause : MonoBehaviour
     public string levelToLoad;
     public static bool isPaused = false;
     public GameObject pauseMenuUI;
+
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
@@ -27,17 +28,16 @@ public class MenuPause : MonoBehaviour
         Time.timeScale = 1.0f;
         isPaused = false;
     }
-
-    public void MainMenu()
-    {
-        Resume();
-        SceneManager.LoadScene(levelToLoad);
-    }
-
     public void Paused()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0.0f;
         isPaused = true;
+    }
+
+    public void MainMenu()
+    {
+        Resume();
+        SceneManager.LoadScene(levelToLoad);
     }
 }
