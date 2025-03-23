@@ -60,11 +60,12 @@ Material:
     - _G: 0
     - _NB: 0
     - _NB_Gradient_coef: 455
-    - _Power: 1
-    - _Power_1: 1000
+    - _Power: 1.62
+    - _Power_1: 997
     - _R: 0
-    - _Radar: 1
-    - _blend: 0
+    - _Radar: 0
+    - _Thermic: 1
+    - _blend: 0.25
     - _saturation: 0
     m_Colors: []
   m_BuildTextureStacks: []
