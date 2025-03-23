@@ -1309,9 +1309,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6911646801685281682}
     - target: {fileID: 4097179577450148544, guid: dede7cf639f9c994f80c0da9cb4940ec, type: 3}
+      propertyPath: resIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097179577450148544, guid: dede7cf639f9c994f80c0da9cb4940ec, type: 3}
       propertyPath: mapScreenUI
       value: 
       objectReference: {fileID: 4032185188457729259}
+    - target: {fileID: 4097179577450148544, guid: dede7cf639f9c994f80c0da9cb4940ec, type: 3}
+      propertyPath: resolutionList.Array.data[0].x
+      value: 480
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097179577450148544, guid: dede7cf639f9c994f80c0da9cb4940ec, type: 3}
+      propertyPath: resolutionList.Array.data[0].y
+      value: 720
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097179577450148544, guid: dede7cf639f9c994f80c0da9cb4940ec, type: 3}
+      propertyPath: resolutionList.Array.data[1].x
+      value: 720
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097179577450148544, guid: dede7cf639f9c994f80c0da9cb4940ec, type: 3}
+      propertyPath: resolutionList.Array.data[1].y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097179577450148544, guid: dede7cf639f9c994f80c0da9cb4940ec, type: 3}
+      propertyPath: resolutionList.Array.data[2].x
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 7892673238653663721, guid: dede7cf639f9c994f80c0da9cb4940ec, type: 3}
       propertyPath: sliderOptic
       value: 
@@ -1352,12 +1376,36 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2603123363788631380, guid: 756f03edbb8e65f428e97f8a3b85522e, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 6014037708299547226, guid: 756f03edbb8e65f428e97f8a3b85522e, type: 3}
       propertyPath: orthographic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6014037708299547226, guid: 756f03edbb8e65f428e97f8a3b85522e, type: 3}
+      propertyPath: orthographic size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6014037708299547226, guid: 756f03edbb8e65f428e97f8a3b85522e, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 8323929742275662934, guid: 756f03edbb8e65f428e97f8a3b85522e, type: 3}
       propertyPath: orthographic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323929742275662934, guid: 756f03edbb8e65f428e97f8a3b85522e, type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 8400000, guid: 7aa2fa2dc61569946a451f8c2bf0ecad, type: 2}
+    - target: {fileID: 8323929742275662934, guid: 756f03edbb8e65f428e97f8a3b85522e, type: 3}
+      propertyPath: orthographic size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323929742275662934, guid: 756f03edbb8e65f428e97f8a3b85522e, type: 3}
+      propertyPath: m_CullingMask.m_Bits
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8866016033924876683, guid: 756f03edbb8e65f428e97f8a3b85522e, type: 3}
@@ -1497,6 +1545,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3947886539798297308, guid: 3550254f1053b8d4c90c6369a4ce4bb2, type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 8400000, guid: 7aa2fa2dc61569946a451f8c2bf0ecad, type: 2}
     - target: {fileID: 6771605447536916514, guid: 3550254f1053b8d4c90c6369a4ce4bb2, type: 3}
       propertyPath: m_Name
       value: MapScreen

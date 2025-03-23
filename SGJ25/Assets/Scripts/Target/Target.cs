@@ -14,8 +14,13 @@ public class Target : MonoBehaviour
         if (isPlaced)
             return;
 
-        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector3(mousePos.x-4, 1, mousePos.z-0.3f);
+
+        
+
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); //screenPointToRay
+        
+        transform.position = new Vector3(mousePos.x, 1, mousePos.z);
+        print(transform.position);
     }
 
     public void PlaceTarget()

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class ImageResolution : MonoBehaviour
 {
+    
     [SerializeField] List<RenderTexture> resolutionList = new List<RenderTexture>();
 
     [SerializeField] Camera cam;
