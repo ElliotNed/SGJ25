@@ -168,6 +168,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4509928978931956255, guid: c1d6b6a894a07f3428a233e17c0e885a, type: 3}
+      propertyPath: DevMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4509928978931956255, guid: c1d6b6a894a07f3428a233e17c0e885a, type: 3}
       propertyPath: Transmitter
       value: 
       objectReference: {fileID: 1340783185}
@@ -571,7 +575,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9088583761550296967, guid: 240845371cf3a2a47bd9644cda3e4954, type: 3}
   m_PrefabInstance: {fileID: 306247860}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &393075313
+--- !u!1001 &310304338
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -640,10 +644,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5dc02260ac82224580d8fb55228b3a6, type: 3}
---- !u!114 &393075314 stripped
+--- !u!114 &414153697 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2974713966224469047, guid: c5dc02260ac82224580d8fb55228b3a6, type: 3}
-  m_PrefabInstance: {fileID: 393075313}
+  m_PrefabInstance: {fileID: 310304338}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -1434,7 +1438,7 @@ PrefabInstance:
     - target: {fileID: 7935467908135639825, guid: 6c32b20e94606ea41b2d0dd442131198, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 393075314}
+      objectReference: {fileID: 414153697}
     - target: {fileID: 7935467908135639825, guid: 6c32b20e94606ea41b2d0dd442131198, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GuessTarget
@@ -1749,6 +1753,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9088583761550296967, guid: 240845371cf3a2a47bd9644cda3e4954, type: 3}
   m_PrefabInstance: {fileID: 1247829213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1254376150 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7297996978913562451, guid: 756f03edbb8e65f428e97f8a3b85522e, type: 3}
+  m_PrefabInstance: {fileID: 648296993}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1279555532
 PrefabInstance:
@@ -2860,7 +2869,7 @@ PrefabInstance:
     - target: {fileID: 4097179577450148544, guid: dede7cf639f9c994f80c0da9cb4940ec, type: 3}
       propertyPath: cam
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1254376150}
     - target: {fileID: 4097179577450148544, guid: dede7cf639f9c994f80c0da9cb4940ec, type: 3}
       propertyPath: sliderRes
       value: 
@@ -3070,6 +3079,6 @@ SceneRoots:
   - {fileID: 1464270593}
   - {fileID: 1420581507}
   - {fileID: 1857604710}
-  - {fileID: 393075313}
+  - {fileID: 310304338}
   - {fileID: 47539153}
   - {fileID: 1340783184}

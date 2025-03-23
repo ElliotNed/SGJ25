@@ -44,7 +44,6 @@ public class MousePlayer : MonoBehaviour
                 //victory
                 if (nearbyObject.TryGetComponent(out RightTarget success))
                 {
-                    SceneManager.LoadScene(0);
                     foundTarget = true;
                     if(!victory)
                         ScoreManager.Victory();
