@@ -55,6 +55,6 @@ public class sliderEffect : MonoBehaviour
         {
             slider.value += maxPowerCapacity - sum;
         }
-        //Sound.SendMsg("/music/set", msg, 1 + slider.value);
+        Sound.SendMsg("/music/set", msg, 1 + slider.value);
     }
 }
