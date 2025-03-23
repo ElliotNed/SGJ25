@@ -36,7 +36,7 @@ namespace SuperCollider
             {
                 process = new Process();
                 process.StartInfo.WorkingDirectory = Path.Combine(Application.dataPath, SoundDirectory, "sclang");
-                process.StartInfo.FileName = Path.Combine(Application.dataPath, SoundDirectory, "sclang", "sclang.exe");
+                process.StartInfo.FileName = Path.Combine(Application.dataPath, SoundDirectory, "sclang", "sclang.exe"); 
                 process.StartInfo.Arguments = Path.Combine(Application.dataPath, SoundDirectory, FileName);
                 process.EnableRaisingEvents = false;
                 process.StartInfo.UseShellExecute = false;

@@ -42,8 +42,8 @@ s.waitForBoot({
 //
 )
 
-"distortMul".asSymbol.asSpec
-Ndef(\Music).gui
+//"distortMul".asSymbol.asSpec
+//Ndef(\Music).gui
 
 //
 // OSCdef(\s, {|msg|

@@ -1394,9 +1394,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4509928978931956255, guid: c1d6b6a894a07f3428a233e17c0e885a, type: 3}
+      propertyPath: DevMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4509928978931956255, guid: c1d6b6a894a07f3428a233e17c0e885a, type: 3}
       propertyPath: Transmitter
       value: 
       objectReference: {fileID: 1462731865}
+    - target: {fileID: 4509928978931956255, guid: c1d6b6a894a07f3428a233e17c0e885a, type: 3}
+      propertyPath: SoundDirectory
+      value: ../Sound
+      objectReference: {fileID: 0}
     - target: {fileID: 8921499687186920611, guid: c1d6b6a894a07f3428a233e17c0e885a, type: 3}
       propertyPath: m_Name
       value: Sound
@@ -1436,7 +1444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbba286dc10e549b2bdec947ef8dbd3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _autoConnect: 1
+  _autoConnect: 0
   _closeOnPause: 0
   _mapBundle: {fileID: 0}
   _workInEditor: 0
@@ -1455,7 +1463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 464088183d2a1484ab8fb64e356c9f5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _autoConnect: 1
+  _autoConnect: 0
   _closeOnPause: 0
   _mapBundle: {fileID: 0}
   _workInEditor: 0
