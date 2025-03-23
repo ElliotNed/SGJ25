@@ -15,14 +15,16 @@ public class ImageResolution : MonoBehaviour
     [UnityEngine.Range(0,6)]
     public int resIndex = 0;
 
+    public Slider sliderRes;
+
     private void Update()
     {
-        ChangeRes(resIndex);
+        sliderRes.onValueChanged.AddListener(delegate { ChangeRes((int)sliderRes.value); });
     }
 
     private void ChangeRes(int x)
     {
-        cam.targetTexture = resolutionList[resIndex];
-        mapScreenUI.texture = resolutionList[resIndex];
+        cam.targetTexture = resolutionList[x];
+        mapScreenUI.texture = resolutionList[x];
     }
 }
