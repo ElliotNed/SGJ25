@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b77f13c946efcf439b24ce9bcf05dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPowerCapacity: 50
+  maxPowerCapacity: 150
   sliderThermal: {fileID: 0}
   sliderRadar: {fileID: 0}
   sliderOptic: {fileID: 0}
