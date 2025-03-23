@@ -5,7 +5,7 @@ Spec.add(\gain, [0, 1]);
 Spec.add(\lpf, [10, 4000, \lin, 1]);
 
 thisProcess.openUDPPort(57120);
-	Ndef.clear();
+Ndef.clear();
 
 s.waitForBoot({
 
@@ -22,18 +22,20 @@ s.waitForBoot({
 
 	OSCdef(\start, {|msg|
 		msg.postln;
-		Ndef(\PlayBuf, \Music).play;
+		Ndef(\Music).play;
 	}, '/music/start');
 
 	OSCdef(\stop, { |msg|
 		msg.postln;
-		Ndef(\PlayBuf).stop;
+		Ndef(\Music).stop;
 	}, '/music/stop');
 
 	OSCdef(\set, { |msg|
-		"set".postln;
+		var spec = msg[0];
+		var value = spec.asSpec.map(msg[1].asFloat / 100);
+
 		msg.postln;
-		Ndef(\PlayBuf).set(\lpf, msg)
+		Ndef(\Music).set(spec, value)
 	}, '/music/set');
 
 });
