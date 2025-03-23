@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 
 public class sliderEffect : MonoBehaviour
 {
+    [SerializeField] SuperCollider.SuperCollider Sound; 
     [SerializeField] float maxPowerCapacity = 50;
   //  SimpleMessageTransmitter
     float powerCapacity;
@@ -35,5 +36,6 @@ public class sliderEffect : MonoBehaviour
         {
             slider.value += maxPowerCapacity - sum;
         }
+        Sound.SendMsg("/music/set", 1 + slider.value);
     }
 }
