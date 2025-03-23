@@ -23,12 +23,12 @@ public class sliderEffect : MonoBehaviour
 
     private void Start()
     {
-        sliderThermal.onValueChanged.AddListener(delegate { UpdateSlidersMaxValue(sliderThermal); });
-        sliderRadar.onValueChanged.AddListener(delegate { UpdateSlidersMaxValue(sliderRadar); });
-        sliderOptic.onValueChanged.AddListener(delegate { UpdateSlidersMaxValue(sliderOptic); });
+        sliderThermal.onValueChanged.AddListener(delegate { UpdateSlidersMaxValue(sliderThermal, "distortMul");  });
+        sliderRadar.onValueChanged.AddListener(delegate { UpdateSlidersMaxValue(sliderRadar, "distortAdd"); });
+        sliderOptic.onValueChanged.AddListener(delegate { UpdateSlidersMaxValue(sliderOptic, "lpf");  });
     }
 
-    private void UpdateSlidersMaxValue(UnityEngine.UI.Slider slider)
+    private void UpdateSlidersMaxValue(UnityEngine.UI.Slider slider, string msg)
     {
         //todo send msg
         float sum = sliderThermal.value + sliderRadar.value + sliderOptic.value;
@@ -36,6 +36,6 @@ public class sliderEffect : MonoBehaviour
         {
             slider.value += maxPowerCapacity - sum;
         }
-        Sound.SendMsg("/music/set", 1 + slider.value);
+        Sound.SendMsg("/music/set", msg, 1 + slider.value);
     }
 }

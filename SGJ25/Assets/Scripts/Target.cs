@@ -22,4 +22,9 @@ public class Target : MonoBehaviour
     {
         isPlaced = true;
     }
+
+    public void Rotate(float scrollAmount)
+    {
+        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + scrollAmount*15, transform.rotation.eulerAngles.z));
+    }
 }

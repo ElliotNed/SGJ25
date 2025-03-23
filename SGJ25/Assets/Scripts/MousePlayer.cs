@@ -19,13 +19,13 @@ public class MousePlayer : MonoBehaviour
     public void RotateTarget(InputAction.CallbackContext context)
     {
         GameObject[] targets = GameObject.FindGameObjectsWithTag("Target");
-        if(context.started && targets.Length > 0)
+        if(context.performed && targets.Length > 0)
         {
             foreach(var target in targets)
             {
                 if(!target.GetComponent<Target>().isPlaced)
                 {
-                    
+                    target.GetComponent<Target>().Rotate(context.ReadValue<Vector2>().y);
                 }
             }
         }
