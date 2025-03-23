@@ -20,7 +20,6 @@ public class Target : MonoBehaviour
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); //screenPointToRay
         
         transform.position = new Vector3(mousePos.x, 1, mousePos.z);
-        print(transform.position);
     }
 
     public void PlaceTarget()

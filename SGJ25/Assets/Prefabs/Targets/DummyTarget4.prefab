@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 1508309423923399798, guid: 9a729d9f132714d45a9cfc9201cfda53, type: 3}
     - target: {fileID: 919132149155446097, guid: 9a729d9f132714d45a9cfc9201cfda53, type: 3}
       propertyPath: m_Name
-      value: level2
+      value: DummyTarget4
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9a729d9f132714d45a9cfc9201cfda53, type: 3}
       propertyPath: m_TagString
@@ -66,14 +66,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9a729d9f132714d45a9cfc9201cfda53, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -7524842431401471882}
+      addedObject: {fileID: -4333930103709420164}
   m_SourcePrefab: {fileID: 100100000, guid: 9a729d9f132714d45a9cfc9201cfda53, type: 3}
 --- !u!1 &5388093201324944158 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9a729d9f132714d45a9cfc9201cfda53, type: 3}
   m_PrefabInstance: {fileID: 5046058986628355663}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-7524842431401471882
+--- !u!114 &-4333930103709420164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,4 +87,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mousePos: {x: 0, y: 0, z: 0}
   isPlaced: 0
-  isRightTarget: 1
+  isRightTarget: 0
