@@ -50,17 +50,22 @@ Material:
     m_Ints: []
     m_Floats:
     - _B: 0
+    - _Blur_level: 0
     - _Boolean: 0
     - _Boolean_1: 0
     - _Boolean_2: 0
     - _Boolean_3: 1
     - _Contrast: 1
-    - _Float: 1
+    - _Float: 0
     - _G: 0
-    - _NB: 0
+    - _NB: 1
     - _NB_Gradient_coef: 455
-    - _Power: 1
+    - _Power: 1.83
+    - _Power_1: 500
     - _R: 0
+    - _Radar: 1
+    - _blend: 0
+    - _saturation: 0
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
