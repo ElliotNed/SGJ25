@@ -68,7 +68,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b77f13c946efcf439b24ce9bcf05dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sound: {fileID: 0}
   maxPowerCapacity: 150
+  shader: {fileID: 2100000, guid: 0f8c1bc19ccb75a489c72b40e56c6bf3, type: 2}
   sliderThermal: {fileID: 0}
   sliderRadar: {fileID: 0}
   sliderOptic: {fileID: 0}

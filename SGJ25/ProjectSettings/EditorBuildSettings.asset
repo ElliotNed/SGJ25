@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 4b8bee849837eda4f89d2436a58e190c
   - enabled: 1
+    path: Assets/Scenes/Elliot.unity
+    guid: 94835f03f31a6c34590fb91560e7f990
+  - enabled: 1
     path: Assets/Scenes/Level/Level 1.unity
     guid: b1ce075347405d54398489c5f30b22a1
   - enabled: 1
