@@ -2,7 +2,7 @@ using UnityEngine;
 
 public static class ScoreManager
 {
-    public static int score = 0;
+    public static int score = 100;
 
     public static void Victory()
     {
