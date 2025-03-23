@@ -385,9 +385,6 @@
             "m_Id": "bd20e1de64f14f10b9de611b252476db"
         },
         {
-            "m_Id": "85df6c9f32fb42bbace43299270fc84b"
-        },
-        {
             "m_Id": "3bbdb1df466f42f78c93651b7f9305e9"
         },
         {
@@ -4072,10 +4069,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2334.400390625,
-            "y": -447.20013427734377,
-            "width": 145.599609375,
-            "height": 109.6002197265625
+            "x": -2446.39990234375,
+            "y": -434.39996337890627,
+            "width": 145.599853515625,
+            "height": 109.60000610351563
         }
     },
     "m_Slots": [
@@ -10671,42 +10668,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
-    "m_ObjectId": "85df6c9f32fb42bbace43299270fc84b",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Property",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -6.373407363891602,
-            "y": 1291.6888427734375,
-            "width": 0.0,
-            "height": 0.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "ed66aec4523542f99c73a18aaf341e3b"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Property": {
-        "m_Id": "35512a0ed9da47af9f93c3aec417e3df"
-    }
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.UVMaterialSlot",
     "m_ObjectId": "866bf484f4a44e6d8caa3f88d4dc4344",
     "m_Id": 0,
@@ -16826,21 +16787,6 @@
     },
     "m_Labels": [],
     "m_Channel": 0
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
-    "m_ObjectId": "ed66aec4523542f99c73a18aaf341e3b",
-    "m_Id": 0,
-    "m_DisplayName": "Slider_Thermic",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": 0.0,
-    "m_DefaultValue": 0.0,
-    "m_Labels": []
 }
 
 {
