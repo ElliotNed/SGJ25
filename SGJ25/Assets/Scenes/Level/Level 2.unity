@@ -3778,6 +3778,10 @@ PrefabInstance:
       value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8323929742275662934, guid: 756f03edbb8e65f428e97f8a3b85522e, type: 3}
+      propertyPath: far clip plane
+      value: 444
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323929742275662934, guid: 756f03edbb8e65f428e97f8a3b85522e, type: 3}
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 8400000, guid: b2d335316d9563f4eae5ac15d61f40d8, type: 2}
