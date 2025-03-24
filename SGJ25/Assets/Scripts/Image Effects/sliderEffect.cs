@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
-
+using TMPro;
 
 public class sliderEffect : MonoBehaviour
 {
@@ -21,6 +21,8 @@ public class sliderEffect : MonoBehaviour
     public UnityEngine.UI.Toggle red;
     public UnityEngine.UI.Toggle green;
     public UnityEngine.UI.Toggle blue;
+
+    public TextMeshProUGUI EnergieValueText;
 
     private void Awake()
     {
@@ -41,12 +43,16 @@ public class sliderEffect : MonoBehaviour
         shader.SetFloat("_Slider_Radar", sliderRadar.value);
         shader.SetFloat("_Slider_Optic", sliderOptic.value);
 
-        if (red == true)
-        {
-            
-            Debug.Log("greg");
+        EnergieValueText.text  = EngergieCalculation().ToString() + "/" + maxPowerCapacity;
+    }
 
-        }
+    public float EngergieCalculation()
+    {
+        float TotalEnergieValue = 0;
+
+        TotalEnergieValue = maxPowerCapacity - sliderThermal.value - sliderRadar.value - sliderOptic.value;
+
+        return TotalEnergieValue;
     }
 
     public void RedToggle(bool tog)

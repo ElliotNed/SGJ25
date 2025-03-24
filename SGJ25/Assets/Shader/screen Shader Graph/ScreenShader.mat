@@ -49,7 +49,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _B: 1
+    - _B: 0
     - _Blur_level: 0.01
     - _Boolean: 0
     - _Boolean_1: 0
@@ -58,17 +58,17 @@ Material:
     - _Contrast: 1.1
     - _Contrast_quality: 1
     - _Float: 1
-    - _G: 1
+    - _G: 0
     - _Interaction: 0
     - _NB: 0
     - _NB_Gradient_coef: 455
     - _Power: 1
     - _Power_1: 0
-    - _R: 1
+    - _R: 0
     - _Radar: 0
-    - _Slider_Optic: 0
-    - _Slider_Radar: 0
-    - _Slider_Thermic: 0
+    - _Slider_Optic: 64.090034
+    - _Slider_Radar: 35.90997
+    - _Slider_Thermic: 50
     - _Thermic: 0
     - _blend: 0
     - _blend_thermic_radar: 3.61
