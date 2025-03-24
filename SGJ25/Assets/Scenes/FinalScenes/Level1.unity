@@ -275,7 +275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4509928978931956255, guid: c1d6b6a894a07f3428a233e17c0e885a, type: 3}
       propertyPath: DevMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4509928978931956255, guid: c1d6b6a894a07f3428a233e17c0e885a, type: 3}
       propertyPath: Transmitter
@@ -507,6 +507,10 @@ PrefabInstance:
       propertyPath: retryText
       value: 
       objectReference: {fileID: 535467551}
+    - target: {fileID: 2974713966224469047, guid: c5dc02260ac82224580d8fb55228b3a6, type: 3}
+      propertyPath: guessRadius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3904760009793865381, guid: c5dc02260ac82224580d8fb55228b3a6, type: 3}
       propertyPath: m_Name
       value: MousePlayer
@@ -1704,6 +1708,10 @@ PrefabInstance:
       propertyPath: m_fontColor.r
       value: 0.78616345
       objectReference: {fileID: 0}
+    - target: {fileID: 5689532357398642979, guid: 6c32b20e94606ea41b2d0dd442131198, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 7123663430433399152, guid: 5f4576fdc1900064f965077863cd4077, type: 3}
     - target: {fileID: 5900684261513692634, guid: 6c32b20e94606ea41b2d0dd442131198, type: 3}
       propertyPath: m_text
       value: 300/300
@@ -1819,11 +1827,11 @@ PrefabInstance:
     - target: {fileID: 8161603181150019600, guid: 6c32b20e94606ea41b2d0dd442131198, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1810343799, guid: 78a4e12088623674c9cca0638cab6e66, type: 3}
+      objectReference: {fileID: 968554529, guid: ea129133d8f38ae45b9bd8517b8bc3ea, type: 3}
     - target: {fileID: 8173498693966260757, guid: 6c32b20e94606ea41b2d0dd442131198, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1810343799, guid: 78a4e12088623674c9cca0638cab6e66, type: 3}
+      objectReference: {fileID: -362029542, guid: 4899536e3b9b3e54c91a48acb8c174e7, type: 3}
     - target: {fileID: 8335491637739545357, guid: 6c32b20e94606ea41b2d0dd442131198, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
