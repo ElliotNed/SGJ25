@@ -41,10 +41,38 @@ public class sliderEffect : MonoBehaviour
         shader.SetFloat("_Slider_Radar", sliderRadar.value);
         shader.SetFloat("_Slider_Optic", sliderOptic.value);
 
-        if (red)
+        if (red == true)
+        {
+            
+            Debug.Log("greg");
+
+        }
+    }
+
+    public void RedToggle(bool tog)
+    {
+        if (tog)
+        {
             shader.SetInt("_R", 1);
+        }
         else
             shader.SetInt("_R", 0);
+    }public void GreenToggle(bool tog)
+    {
+        if (tog)
+        {
+            shader.SetInt("_G", 1);
+        }
+        else
+            shader.SetInt("_G", 0);
+    }public void BleuToggle(bool tog)
+    {
+        if (tog)
+        {
+            shader.SetInt("_B", 1);
+        }
+        else
+            shader.SetInt("_B", 0);
     }
 
     private void UpdateSlidersMaxValue(UnityEngine.UI.Slider slider, string msg)
