@@ -11,6 +11,11 @@ public static class ScoreManager
         timerStart = Time.time;
     }
 
+    public static void ResetScore()
+    {
+        score = 0;
+    }
+
     public static void AddScore()
     {
         levelTime = Time.time - timerStart;

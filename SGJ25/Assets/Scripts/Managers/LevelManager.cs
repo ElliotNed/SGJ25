@@ -15,6 +15,7 @@ public static class LevelManager
         }
         if (currentLevel == levels.Length)
         {
+            ScoreManager.ResetScore();
             SceneManager.LoadScene(0);
         }
     }
