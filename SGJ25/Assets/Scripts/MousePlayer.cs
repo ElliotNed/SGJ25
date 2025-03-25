@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -5,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class MousePlayer : MonoBehaviour
 {
     [SerializeField] float guessRadius = .2f;
-    private bool victory = false;
 
     [SerializeField] GameObject retryText;
+    [SerializeField] GameObject victoryText;
     public void PlaceTarget(InputAction.CallbackContext context)
     {
         GameObject[] targets = GameObject.FindGameObjectsWithTag("Target");
@@ -47,16 +48,22 @@ public class MousePlayer : MonoBehaviour
                 if (nearbyObject.TryGetComponent(out RightTarget success))
                 {
                     foundTarget = true;
-                    Debug.Log("success");
-                    LevelManager.NextLevel();
+                    victoryText.SetActive(true);
+                    StartCoroutine(victory());
+                    
                 }
                 if (!foundTarget)
                 {
                     Destroy(target);
                     retryText.SetActive(true);
-                    Debug.Log("retry");
                 }
             }
         }
+    }
+
+    IEnumerator victory()
+    {
+        yield return new WaitForSeconds(2);
+        LevelManager.NextLevel();
     }
 }
