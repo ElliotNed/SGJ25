@@ -35,6 +35,10 @@ public class sliderEffect : MonoBehaviour
         sliderThermal.onValueChanged.AddListener(delegate { UpdateSlidersMaxValue(sliderThermal, "distortMul");  });
         sliderRadar.onValueChanged.AddListener(delegate { UpdateSlidersMaxValue(sliderRadar, "distortAdd"); });
         sliderOptic.onValueChanged.AddListener(delegate { UpdateSlidersMaxValue(sliderOptic, "lpf");  });
+
+        RedToggle(true);
+        GreenToggle(true);
+        BleuToggle(true);
     }
 
     private void Update()

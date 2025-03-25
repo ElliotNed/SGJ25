@@ -17,6 +17,11 @@ public class ImageResolution : MonoBehaviour
 
     public Slider sliderRes;
 
+    private void Start()
+    {
+        ChangeRes(0);
+    }
+
     private void Update()
     {
         sliderRes.onValueChanged.AddListener(delegate { ChangeRes((int)sliderRes.value); });
