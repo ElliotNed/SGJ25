@@ -48,6 +48,8 @@ public class MousePlayer : MonoBehaviour
                 if (nearbyObject.TryGetComponent(out RightTarget success))
                 {
                     foundTarget = true;
+                    if(retryText.activeSelf)
+                        retryText.SetActive(false);
                     victoryText.SetActive(true);
                     ScoreManager.AddScore();
                     StartCoroutine(victory());
@@ -56,7 +58,8 @@ public class MousePlayer : MonoBehaviour
                 if (!foundTarget)
                 {
                     Destroy(target);
-                    retryText.SetActive(true);
+                    if(!victoryText.activeSelf)
+                        retryText.SetActive(true);
                 }
             }
         }

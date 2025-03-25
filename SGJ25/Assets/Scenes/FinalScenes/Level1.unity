@@ -3240,6 +3240,10 @@ PrefabInstance:
       propertyPath: EnergieValueText
       value: 
       objectReference: {fileID: 699378420}
+    - target: {fileID: 7892673238653663721, guid: dede7cf639f9c994f80c0da9cb4940ec, type: 3}
+      propertyPath: maxPowerCapacity
+      value: 250
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
