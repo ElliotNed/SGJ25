@@ -542,6 +542,42 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[1].m_ActionName
       value: 'mouse/Scroll[/Mouse/scroll]'
       objectReference: {fileID: 0}
+    - target: {fileID: 5959963053500784908, guid: c5dc02260ac82224580d8fb55228b3a6, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959963053500784908, guid: c5dc02260ac82224580d8fb55228b3a6, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959963053500784908, guid: c5dc02260ac82224580d8fb55228b3a6, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 414153697}
+    - target: {fileID: 5959963053500784908, guid: c5dc02260ac82224580d8fb55228b3a6, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 414153697}
+    - target: {fileID: 5959963053500784908, guid: c5dc02260ac82224580d8fb55228b3a6, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959963053500784908, guid: c5dc02260ac82224580d8fb55228b3a6, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlaceTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959963053500784908, guid: c5dc02260ac82224580d8fb55228b3a6, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RotateTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959963053500784908, guid: c5dc02260ac82224580d8fb55228b3a6, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MousePlayer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959963053500784908, guid: c5dc02260ac82224580d8fb55228b3a6, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8527321501782244509, guid: c5dc02260ac82224580d8fb55228b3a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
