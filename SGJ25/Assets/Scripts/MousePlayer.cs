@@ -49,6 +49,7 @@ public class MousePlayer : MonoBehaviour
                 {
                     foundTarget = true;
                     victoryText.SetActive(true);
+                    ScoreManager.AddScore();
                     StartCoroutine(victory());
                     
                 }
