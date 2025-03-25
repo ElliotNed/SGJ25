@@ -17,6 +17,7 @@ public class sliderEffect : MonoBehaviour
     public UnityEngine.UI.Slider sliderThermal;
     public UnityEngine.UI.Slider sliderRadar;
     public UnityEngine.UI.Slider sliderOptic;
+    public UnityEngine.UI.Slider sliderRes;
 
     public UnityEngine.UI.Toggle red;
     public UnityEngine.UI.Toggle green;
@@ -35,6 +36,7 @@ public class sliderEffect : MonoBehaviour
         sliderThermal.onValueChanged.AddListener(delegate { UpdateSlidersMaxValue(sliderThermal, "distortMul");  });
         sliderRadar.onValueChanged.AddListener(delegate { UpdateSlidersMaxValue(sliderRadar, "distortAdd"); });
         sliderOptic.onValueChanged.AddListener(delegate { UpdateSlidersMaxValue(sliderOptic, "lpf");  });
+        sliderRes.onValueChanged.AddListener(delegate { UpdateSlidersMaxValue(sliderRes); });
 
         RedToggle(true);
         GreenToggle(true);
@@ -85,14 +87,19 @@ public class sliderEffect : MonoBehaviour
             shader.SetInt("_B", 0);
     }
 
-    private void UpdateSlidersMaxValue(UnityEngine.UI.Slider slider, string msg)
+    private void UpdateSlidersMaxValue(UnityEngine.UI.Slider slider, string msg = null)
     {
         //todo send msg
-        float sum = sliderThermal.value + sliderRadar.value + sliderOptic.value;
+        float sum = sliderThermal.value + sliderRadar.value + sliderOptic.value + (sliderRes.value*10);
         if(sum > maxPowerCapacity)
         {
-            slider.value += maxPowerCapacity - sum;
+            float excess = maxPowerCapacity - sum;
+            if (slider == sliderRes)
+                slider.value += excess/10;
+            else
+                slider.value += excess;
         }
-        Sound.SendMsg("/music/set", msg, 1 + slider.value);
+        if(msg != null)
+            Sound.SendMsg("/music/set", msg, 1 + slider.value);
     }
 }
