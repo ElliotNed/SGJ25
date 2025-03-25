@@ -14,6 +14,7 @@ namespace SuperCollider
         public OSCTransmitter Transmitter;
 
         public bool DevMode = false;
+        public bool isFirstScene = false;
         public string SoundDirectory;
         public string FileName;
 
@@ -23,7 +24,7 @@ namespace SuperCollider
 
         protected virtual void Start()
         {
-            if (DevMode)
+            if (DevMode || !isFirstScene)
             {
                 OnReady();
                 return;
