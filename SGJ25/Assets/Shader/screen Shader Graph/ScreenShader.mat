@@ -66,9 +66,9 @@ Material:
     - _Power_1: 0
     - _R: 1
     - _Radar: 0
-    - _Slider_Optic: 35.761246
-    - _Slider_Radar: 52.355347
-    - _Slider_Thermic: 51.88341
+    - _Slider_Optic: 9.366044
+    - _Slider_Radar: 37.464157
+    - _Slider_Thermic: 28.94959
     - _Thermic: 0
     - _blend: 0
     - _blend_thermic_radar: 3.61

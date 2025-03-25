@@ -54,11 +54,7 @@ public class sliderEffect : MonoBehaviour
 
     public float EngergieCalculation()
     {
-        float TotalEnergieValue = 0;
-
-        TotalEnergieValue = maxPowerCapacity - sliderThermal.value - sliderRadar.value - sliderOptic.value;
-
-        return TotalEnergieValue;
+        return (int)(maxPowerCapacity - sliderThermal.value - sliderRadar.value - sliderOptic.value - sliderRes.value*10);
     }
 
     public void RedToggle(bool tog)
