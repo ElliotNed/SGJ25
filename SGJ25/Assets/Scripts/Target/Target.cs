@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class Target : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class Target : MonoBehaviour
 
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition); //screenPointToRay
         
-        transform.position = new Vector3(mousePos.x, 1, mousePos.z);
+        transform.position = new Vector3(mousePos.x - 1, 1, mousePos.z -14) * 1.5f;
     }
 
     public void PlaceTarget()
